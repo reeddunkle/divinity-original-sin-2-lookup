@@ -53,7 +53,8 @@ body > * {
 
 .app__content > * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .heading {
@@ -61,6 +62,14 @@ body > * {
   margin-top: 0;
   padding-top: 0.5em;
   text-align: center;
+}
+
+.sub-heading {
+  color: #bfbfc8;
+
+  margin-top: 0;
+  padding-top: 0.5em;
+  text-transform: uppercase;
 }
 
 .search {
@@ -74,10 +83,12 @@ body > * {
 
 .search-results {
   border: 0.5px solid var(--borderColor);
+  border-radius: 3px;
   max-height: 85%;
   margin: 1em 0;
   overflow: auto;
   text-align: left;
+  width: 100%;
 }
 
 .search-results .search-results__hr {
@@ -91,6 +102,7 @@ body > * {
   display: flex;
   margin: 0.5em 0;
   padding: 0.25em;
+  width: 95%;
 }
 
 .search-result:first-child {
@@ -101,12 +113,16 @@ body > * {
   margin-bottom: 0;
 }
 
-.search-result:hover {
+.search-result:hover .search-result__image {
   opacity: 0.75;
 }
 
 .search-result__image {
   margin-right: 1em;
+}
+
+.search-result:hover .search-result__name {
+  opacity: 0.75;
 }
 
 .search-result__name {
@@ -120,4 +136,17 @@ body > * {
 
 .search-result__description {
   color: var(--textColor);
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5em;
+  justify-content: center;
+}
+
+.search-result__list-title {
+  margin: 0;
+  padding: 0;
+}
+
+.search-result__list {
+  margin-top: 0;
 }
