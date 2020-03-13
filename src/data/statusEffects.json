@@ -3,19 +3,19 @@
     "name": "Regenerating",
     "description": "Restores Vitality per turn, healing the living and dealing physical damage to the undead.",
     "clearedBy": ["Bleeding"],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_regenerate-icon.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_regenerate-icon.png"
   },
   {
     "name": "Fortified",
     "description": "Maximum Physical Armour increased.\nPhysical Armour: +??\nImmunity to being teleported.",
     "immunities": ["teleport"],
     "givenBy": [{ "name": "Blessed Oil Surface" }],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_fortified-icon.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_fortified-icon.png"
   },
   {
     "name": "Mending Metal",
     "description": "Restores Physical Armor per turn.",
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/geomancer_mend_metal-icon.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/geomancer_mend_metal-icon.png"
   },
   {
     "name": "Rested",
@@ -35,7 +35,7 @@
       }
     ],
     "immunities": ["muted", "blinded", "crippled", "knocked down"],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/rested.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/rested.png"
   },
   {
     "name": "Hasted",
@@ -55,7 +55,7 @@
       }
     ],
     "clearedBy": ["slowed", "crippled"],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_hasted-icon.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_hasted-icon.png"
   },
   {
     "name": "Clear-Minded",
@@ -78,7 +78,7 @@
       "enraged",
       "mad"
     ],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/pyrokinetic_burn_my_eyes-icon.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/pyrokinetic_burn_my_eyes-icon.png"
   },
   {
     "name": "Permafrost",
@@ -96,28 +96,28 @@
       "Shocked",
       "Shackles of Pain"
     ],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_frozen-icon.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_frozen-icon.png"
   },
   {
     "name": "Soothing Cold",
     "description": "Restores Magic Armor per turn.",
     "stats": [{ "name": "Magical Armour" }],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist_soothing_cold-icon.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist_soothing_cold-icon.png"
   },
   {
     "name": "Magic Shell",
     "description": "Maximum Magic Armor increased.",
     "stats": [{ "name": "Magical Armour Max" }],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_frozen_shell-icon.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_frozen_shell-icon.png"
   },
   {
     "name": "Charmed",
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_charmed-icon.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_charmed-icon.png"
   },
   {
     "name": "Soul Mate",
     "description": "Caster: Character is copying 50% of healing and Armour restoration to linked character.\nTarget: Character is receiving healing and Armour restoration from linked character.",
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/summoning-14-21.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/summoning-14-21.png"
   },
   {
     "name": "Blessed",
@@ -147,7 +147,7 @@
         "percent": 50
       }
     ],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/huntsman-15-24.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/huntsman-15-24.png"
   },
   {
     "name": "Evading",
@@ -162,6 +162,6 @@
         "percent": 90
       }
     ],
-    "image": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/aerotheurge-17-1.png"
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/aerotheurge-17-1.png"
   }
 ]
