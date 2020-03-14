@@ -69,9 +69,8 @@ body > * {
 
 .sub-heading {
   color: var(--subHeadingColor);
-  margin-top: 0;
+  margin: 0 0 0.25em 0;
   padding-top: 0.5em;
-  text-transform: uppercase;
 }
 
 .search {
