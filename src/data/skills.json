@@ -448,10 +448,10 @@
     "cooldown": 3,
     "memory": 2,
     "description": "Releases a stream of Blessed Steam that heals characters in its path.\nRestore 6 Vitality for 3 Turn(s)",
-    "removes": [],
+    "removes": ["chilled", "frozen", "burning", "diseased", "decaying"],
     "statusEffects": [
       {
-        "name": "Regerating",
+        "name": "Steam Lance",
         "duration": 3,
         "stats": [
           {
@@ -465,6 +465,38 @@
     "immunities": [],
     "surfaces": [],
     "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist_steam_lance-icon.png",
+    "range": 13
+  },
+  {
+    "name": "Arcane Stitch",
+    "school": "Hydrosophist",
+    "requirements": {
+      "hydrosophist": 3
+    },
+    "actionPoints": 3,
+    "sourcePoints": 1,
+    "cooldown": 4,
+    "memory": 2,
+    "description": "Fully restore target character's Magic Armour. Removes Frozen, Stunned, Petrified, Plague, Suffocating, Poisoned, Burning, Necrofire, Terrified, Silenced, Taunted, Mad.\nRestore [X] Magic Armour",
+    "removes": [
+      "Frozen",
+      "Stunned",
+      "Petrified",
+      "Plague",
+      "Suffocating",
+      "Poisoned",
+      "Burning",
+      "Necrofire",
+      "Terrified",
+      "Silenced",
+      "Taunted",
+      "Mad"
+    ],
+    "statusEffects": [],
+    "stats": [{ "name": "Magic Armour" }],
+    "immunities": [],
+    "surfaces": [],
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist-14-16.png",
     "range": 13
   },
   {
@@ -500,7 +532,7 @@
     "cooldown": 4,
     "memory": 1,
     "description": "Target character's dodging is increased by 90% and your Movement Speed is increased by 20%.\nSets Evading for 1 turn(s).",
-    "removes": ["Burning", "Necrofire", "Poisoned", "Bleeding"],
+    "removes": [],
     "statusEffects": [
       {
         "name": "Evading",
