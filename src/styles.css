@@ -67,8 +67,12 @@ body > * {
   text-align: center;
 }
 
-.sub-heading {
+.label {
+  box-sizing: border-box;
   color: var(--subHeadingColor);
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
   margin: 0 0 0.25em 0;
   padding-top: 0.5em;
 }

@@ -17,17 +17,24 @@ const SearchResult = ({
 
   return (
     <div className="search-result">
-      <img className="search-result__image" src={imageSrc} />
-      <span className="search-result__name">{name}</span>
+      <img
+        alt={`Thumbnail for ${name}`}
+        className="search-result__image"
+        src={imageSrc}
+      />
+      <h3 className="search-result__name">{name}</h3>
       <div className="search-result__description">
-        <p className="search-result__list-title">Removes:</p>
-        <ul className="search-result__list">
+        <label className="search-result__list-title" htmlFor="curesList">
+          Removes:
+        </label>
+        <ul className="search-result__list" id="curesList">
           {cures.map(cure => (
             <li
               className={clsx("search-result__cure", {
                 "is-result": areStringsSimilar(cure, searchValue)
               })}
               key={cure}
+              id={cure}
             >
               {cure}
             </li>

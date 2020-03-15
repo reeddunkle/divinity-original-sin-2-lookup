@@ -43,9 +43,12 @@ export default function App() {
       <div className="app">
         <div className="app__content">
           <h1 className="heading">Divinity Original Sin 2</h1>
-          <h2 className="sub-heading">Find cures for...</h2>
+          <h2 className="label" htmlFor="searchInput">
+            Find cures for...
+          </h2>
           <input
             className="search"
+            id="searchInput"
             placeholder={`"Burning", "Decaying", etc.`}
             onChange={handleSearchChange}
             value={searchValue}
