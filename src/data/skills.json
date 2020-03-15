@@ -10,7 +10,7 @@
     "cooldown": 4,
     "description": "Provides 170% Physical Armour. While Fortified, the target cannot be teleported. Removes Poisoned, Bleeding, Burning, Acid, Decaying.",
     "memory": 1,
-    "removes": ["bleeding", "burning", "decay", "poisoned"],
+    "removes": ["acid", "bleeding", "burning", "decay", "poisoned"],
     "statusEffects": [
       {
         "name": "Fortified",
@@ -19,6 +19,7 @@
     ],
     "stats": [{ "name": "Physical Armour", "percent": "170", "scales": true }],
     "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/geomancer_fortify-icon.png",
+    "immunities": ["teleport"],
     "range": 15
   },
   {
@@ -81,7 +82,6 @@
     "cooldown": 3,
     "description": "Sets Hasted on target character. Hasted increases movement speed by 2m per AP and gives an additional 1 AP per turn. Clears Slowed and Crippled.\nSet Hasted for 2 turn(s).",
     "memory": 1,
-    "removes": ["slowed", "crippled"],
     "statusEffects": [
       {
         "name": "Hasted",
@@ -89,7 +89,6 @@
       }
     ],
     "stats": [],
-    "immunities": ["teleport"],
     "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/pyrokinetic_haste-icon.png",
     "range": 13
   },
@@ -165,13 +164,7 @@
     "cooldown": 5,
     "description": "Heal target and create a water puddle beneath them. Remove Burning, Diseased, Decaying Touch, Poisoned and Bleeding.\nRestore X Vitality",
     "memory": 1,
-    "removes": [
-      "Burning",
-      "Diseased",
-      "Decaying Touch",
-      "Poisoned",
-      "Bleeding"
-    ],
+    "removes": ["Burning", "Diseased", "Decaying", "Poisoned", "Bleeding"],
     "statusEffects": [],
     "stats": [{ "name": "Vitality", "scales": true }],
     "immunities": [],
@@ -189,13 +182,13 @@
     "actionPoints": 2,
     "sourcePoints": 1,
     "cooldown": 5,
-    "description": "Heal yourself and allies around you. Create a water puddle beneath every target. Remove Necrofire, Burning, Diseased, Decaying Touch, Poisoned, Bleeding, Suffocation and Acid.\nRestore 15 Vitality",
+    "description": "Heal yourself and allies around you. Create a water puddle beneath every target. Remove Necrofire, Burning, Diseased, Decaying, Poisoned, Bleeding, Suffocation and Acid.\nRestore 15 Vitality",
     "memory": 2,
     "removes": [
       "Necrofire",
       "Burning",
       "Diseased",
-      "Decaying Touch",
+      "Decaying",
       "Poisoned",
       "Bleeding",
       "Suffocation",
@@ -239,7 +232,7 @@
     "actionPoints": 2,
     "sourcePoints": 0,
     "cooldown": 4,
-    "description": "Target ally enters Cryogenic Stasis. Though incapacitated, they become immune to all damage, and heal over time. Removes Shackles Of Pain.\nSet Permafrost for 1 Turn(s)",
+    "description": "Target ally enters Cryogenic Stasis. Though incapacitated, they become immune to all damage, and heal over time. Removes Shackles of Pain.\nSet Permafrost for 1 Turn(s)",
     "memory": 1,
     "removes": [],
     "statusEffects": [
@@ -248,7 +241,7 @@
     ],
     "stats": [],
     "immunities": [
-      "Shackles Of Pain",
+      "Shackles of Pain",
       "Burning",
       "Stunned",
       "Poisoned",
@@ -448,7 +441,14 @@
     "cooldown": 3,
     "memory": 2,
     "description": "Releases a stream of Blessed Steam that heals characters in its path.\nRestore 6 Vitality for 3 Turn(s)",
-    "removes": ["chilled", "frozen", "burning", "diseased", "decaying"],
+    "removes": [
+      "chilled",
+      "frozen",
+      "burning",
+      "necrofire",
+      "diseased",
+      "decaying"
+    ],
     "statusEffects": [
       {
         "name": "Steam Lance",
@@ -544,5 +544,33 @@
     "surfaces": [],
     "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/aerotheurge-17-1.png",
     "range": 15
+  },
+  {
+    "name": "Break the Shackles",
+    "school": "Special",
+    "actionPoints": 0,
+    "sourcePoints": 1,
+    "cooldown": 2,
+    "memory": 0,
+    "description": "Remove the following negative status effects from yourself: Slowed, Crippled, Chilled, Shocked, Suffocating, Atrophy, Diseased, Infectious Diseased, Silenced, Plagued and Shackles of Pain.",
+    "removes": [
+      "Slowed",
+      "Crippled",
+      "Chilled",
+      "Shocked",
+      "Suffocating",
+      "Atrophy",
+      "Diseased",
+      "Infectious Diseased",
+      "Silenced",
+      "Plagued",
+      "Shackles of Pain"
+    ],
+    "statusEffects": [],
+    "stats": [],
+    "immunities": [],
+    "surfaces": [],
+    "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/break_the_shackles-icon.png",
+    "range": 13
   }
 ]

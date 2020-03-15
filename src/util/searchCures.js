@@ -1,7 +1,7 @@
 import areStringsSimilar from "./areStringsSimilar";
 import keyBy from "./keyBy";
 import lowerCase from "./lowerCase";
-import getSkillsWithEffect from "./getSkillsWithEffect";
+import mapEffectToSkills from "./mapEffectToSkills";
 
 const searchCures = (_ailment, { skills = [], statusEffects = [] }) => {
   const ailment = lowerCase(_ailment);
@@ -12,12 +12,14 @@ const searchCures = (_ailment, { skills = [], statusEffects = [] }) => {
       removes.some(value => areStringsSimilar(value, ailment))
   );
 
-  const effectCures = statusEffects.filter(({ immunities = [] }) =>
-    immunities.some(value => areStringsSimilar(value, ailment))
+  const effectCures = statusEffects.filter(
+    ({ immunities = [], removes = [] }) =>
+      immunities.some(value => areStringsSimilar(value, ailment)) ||
+      removes.some(value => areStringsSimilar(value, ailment))
   );
 
   const skillCuresFromEffects = effectCures
-    .map(effect => getSkillsWithEffect(skills, effect))
+    .map(effect => mapEffectToSkills(effect, skills))
     .flat();
 
   const results = Object.values({

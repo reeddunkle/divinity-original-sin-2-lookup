@@ -9,9 +9,7 @@ const SearchResults = ({ results, searchValue }) => {
         {results.map((result, index) => (
           <li className="search-results__list-item" key={result.name}>
             <SearchResult {...result} searchValue={searchValue} />
-            {index !== results.length - 1 && (
-              <hr className="search-results__hr" />
-            )}
+            <hr className="search-results__hr" />
           </li>
         ))}
       </ul>
