@@ -19,7 +19,6 @@
     ],
     "stats": [{ "name": "Physical Armour", "percent": "170", "scales": true }],
     "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/geomancer_fortify-icon.png",
-    "immunities": ["teleport"],
     "range": 15
   },
   {
