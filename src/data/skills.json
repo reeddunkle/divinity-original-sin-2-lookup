@@ -10,7 +10,7 @@
     "cooldown": 4,
     "description": "Provides 170% Physical Armour. While Fortified, the target cannot be teleported. Removes Poisoned, Bleeding, Burning, Acid, Decaying.",
     "memory": 1,
-    "removes": ["acid", "bleeding", "burning", "decay", "poisoned"],
+    "removes": ["acid", "bleeding", "burning", "decaying", "poisoned"],
     "statusEffects": [
       {
         "name": "Fortified",
