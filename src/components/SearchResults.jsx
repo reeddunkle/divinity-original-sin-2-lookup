@@ -2,6 +2,8 @@ import React from "react";
 
 import SearchResult from "./SearchResult";
 
+import "./search-results.css";
+
 const SearchResults = ({ results, searchValue }) => {
   return (
     <div className="search-results__container">
@@ -9,7 +11,7 @@ const SearchResults = ({ results, searchValue }) => {
         {results.map((result, index) => (
           <li className="search-results__list-item" key={result.name}>
             <SearchResult {...result} searchValue={searchValue} />
-            <hr className="search-results__hr" />
+            <div className="fade-out"></div>
           </li>
         ))}
       </ul>

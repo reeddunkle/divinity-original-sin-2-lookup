@@ -1,0 +1,61 @@
+.search-result {
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0.75em 1em;
+  position: relative;
+  width: 100%;
+}
+
+.search-result:first-child {
+  margin-top: 0;
+}
+
+.search-result:last-child {
+  margin-bottom: 0;
+}
+
+.search-result:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-result__image {
+  margin-right: 1em;
+}
+
+.search-result__name {
+  color: var(--skillColor);
+  text-transform: uppercase;
+  margin: 0 1em 0 0;
+  max-width: 125px;
+  min-width: 125px;
+}
+
+.search-result__description {
+  color: var(--textColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-result__list-title {
+  margin: 0;
+  padding: 0;
+}
+
+.search-result__list {
+  list-style-type: disc;
+  margin-top: 0;
+  padding-inline-start: 30px;
+}
+
+.search-result__cure.is-result {
+  color: var(--skillColor);
+}
+
+.search-result__name-container {
+  align-items: center;
+  display: flex;
+}
