@@ -163,7 +163,14 @@
     "cooldown": 5,
     "description": "Heal target and create a water puddle beneath them. Remove Burning, Diseased, Decaying Touch, Poisoned and Bleeding.\nRestore X Vitality",
     "memory": 1,
-    "removes": ["Burning", "Diseased", "Decaying", "Poisoned", "Bleeding"],
+    "removes": [
+      "Burning",
+      "Diseased",
+      "Decaying",
+      "Infested",
+      "Poisoned",
+      "Bleeding"
+    ],
     "statusEffects": [],
     "stats": [{ "name": "Vitality", "scales": true }],
     "immunities": [],
@@ -211,7 +218,7 @@
     "cooldown": 5,
     "description": "Shoot a bolt of healing energy that will jump to nearby allies.\nRestore 7 Vitality",
     "memory": 1,
-    "removes": [],
+    "removes": ["Infested"],
     "statusEffects": [],
     "stats": [{ "name": "Vitality", "amount": 7, "scales": true }],
     "immunities": [],
@@ -396,7 +403,7 @@
     "cooldown": 3,
     "memory": 1,
     "description": "Bless target character or surface.\nSet Blessed for 2 turn(s).",
-    "removes": [],
+    "removes": ["Infested"],
     "statusEffects": [
       {
         "name": "Blessed",

@@ -3,6 +3,7 @@
     "name": "Regenerating",
     "description": "Restores Vitality per turn, healing the living and dealing physical damage to the undead.",
     "clearedBy": ["Bleeding"],
+    "removes": ["Infested"],
     "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_regenerate-icon.png"
   },
   {
@@ -124,6 +125,7 @@
     "name": "Blessed",
     "description": "Protects against Diseased, Decaying Touch, Petrified, Stunned.\nAccuracy +20%\nDodging +10%\nResistances: +15%",
     "immunities": ["Diseased", "Decaying", "Petrified", "Stunned"],
+    "removes": ["Infested"],
     "stats": [
       {
         "name": "Accuracy",
