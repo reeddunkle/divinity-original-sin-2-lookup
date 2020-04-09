@@ -402,7 +402,7 @@
     "sourcePoints": 1,
     "cooldown": 3,
     "memory": 1,
-    "description": "Bless target character or surface.\nSet Blessed for 2 turn(s).",
+    "description": "Bless target character or surface.\nSet Blessed for 2 turn(s).\nProtects against: Diseased, Decaying Touch, Petrified, Stunned, Cursed.\nAccuracy 20%, Dodge 10%, Resist All 15%",
     "removes": ["Infested"],
     "statusEffects": [
       {
@@ -411,7 +411,7 @@
       }
     ],
     "stats": [],
-    "immunities": ["Diseased", "Decaying", "Petrified", "Stunned"],
+    "immunities": ["Cursed", "Diseased", "Decaying", "Petrified", "Stunned"],
     "surfaces": [],
     "imageSrc": "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/bless-icon.png",
     "range": 13

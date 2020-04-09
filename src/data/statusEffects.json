@@ -124,7 +124,7 @@
   {
     "name": "Blessed",
     "description": "Protects against Diseased, Decaying Touch, Petrified, Stunned.\nAccuracy +20%\nDodging +10%\nResistances: +15%",
-    "immunities": ["Diseased", "Decaying", "Petrified", "Stunned"],
+    "immunities": ["Cursed", "Diseased", "Decaying", "Petrified", "Stunned"],
     "removes": ["Infested"],
     "stats": [
       {
