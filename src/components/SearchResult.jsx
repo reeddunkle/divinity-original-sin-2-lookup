@@ -2,9 +2,13 @@ import clsx from "clsx";
 import React from "react";
 import "./search-result.css";
 
-import { areStringsSimilar, titleCase as _tmp, upperFirst } from "../util";
+import { areStringsSimilar, upperFirst } from "../util";
 
-const titleCase = upperFirst;
+const capitalizeWords = (str = "") =>
+  str
+    .split(" ")
+    .map((word) => upperFirst(word))
+    .join(" ");
 
 const SearchResult = ({
   imageSrc = "",
@@ -13,9 +17,9 @@ const SearchResult = ({
   removes = [],
   searchValue: _searchValue = "",
 }) => {
-  const searchValue = titleCase(_searchValue);
+  const searchValue = capitalizeWords(_searchValue);
   const cures = Array.from(
-    new Set([...removes, ...immunities].map(titleCase))
+    new Set([...removes, ...immunities].map(capitalizeWords))
   ).sort((valueA, valueB) => {
     return areStringsSimilar(valueA, searchValue)
       ? -1
