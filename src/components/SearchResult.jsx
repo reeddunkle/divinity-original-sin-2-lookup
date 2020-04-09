@@ -2,18 +2,20 @@ import clsx from "clsx";
 import React from "react";
 import "./search-result.css";
 
-import { areStringsSimilar, upperFirst } from "../util";
+import { areStringsSimilar, titleCase as _tmp, upperFirst } from "../util";
+
+const titleCase = upperFirst;
 
 const SearchResult = ({
   imageSrc = "",
   immunities = [],
   name,
   removes = [],
-  searchValue: _searchValue = ""
+  searchValue: _searchValue = "",
 }) => {
-  const searchValue = upperFirst(_searchValue);
+  const searchValue = titleCase(_searchValue);
   const cures = Array.from(
-    new Set([...removes, ...immunities].map(upperFirst))
+    new Set([...removes, ...immunities].map(titleCase))
   ).sort((valueA, valueB) => {
     return areStringsSimilar(valueA, searchValue)
       ? -1
@@ -37,10 +39,10 @@ const SearchResult = ({
           Removes:
         </label>
         <ul className="search-result__list" id="curesList">
-          {cures.map(cure => (
+          {cures.map((cure) => (
             <li
               className={clsx("search-result__cure", {
-                "is-result": areStringsSimilar(cure, searchValue)
+                "is-result": areStringsSimilar(cure, searchValue),
               })}
               key={cure}
               id={cure}
