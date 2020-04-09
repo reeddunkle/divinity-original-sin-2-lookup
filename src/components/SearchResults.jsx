@@ -11,7 +11,7 @@ const SearchResults = ({ results, searchValue }) => {
         {results.map((result, index) => (
           <li className="search-results__list-item" key={result.name}>
             <SearchResult {...result} searchValue={searchValue} />
-            <div className="fade-out"></div>
+            <div className="bottom-border"></div>
           </li>
         ))}
       </ul>
