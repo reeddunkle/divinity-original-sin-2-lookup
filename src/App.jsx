@@ -12,14 +12,14 @@ export default function App() {
   const [cureResults, setCureResults] = useState([]);
   const inputRef = useRef();
 
-  const handleSearchChange = event => {
+  const handleSearchChange = (event) => {
     setSearchValue(event.target.value);
   };
 
   useEffect(() => {
     setData({
       skills: SKILLS,
-      statusEffects: STATUS_EFFECTS
+      statusEffects: STATUS_EFFECTS,
     });
 
     if (inputRef.current) {
@@ -30,7 +30,7 @@ export default function App() {
   useEffect(
     debounce(() => {
       const cureResults =
-        searchValue.length > 2
+        searchValue.length > 0
           ? searchCures(searchValue.toLowerCase(), data)
           : [];
       setCureResults(cureResults);
