@@ -1,11 +1,7 @@
-import areStringsSimilar from "./areStringsSimilar";
 import keyBy from "./keyBy";
 import lowerCase from "./lowerCase";
 import mapEffectToSkills from "./mapEffectToSkills";
-
-const startsWith = (fullStr, subStr) => {
-  return fullStr.toLowerCase().startsWith(subStr.toLowerCase());
-};
+import startsWith from "./startsWith";
 
 const searchCures = (_ailment, { skills = [], statusEffects = [] }) => {
   const ailment = lowerCase(_ailment);

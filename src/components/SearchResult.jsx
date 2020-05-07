@@ -2,7 +2,7 @@ import clsx from "clsx";
 import React from "react";
 import "./search-result.css";
 
-import { areStringsSimilar, lowerCase } from "../util";
+import { lowerCase, startsWith } from "../util";
 
 const SearchResult = ({
   imageSrc = "",
@@ -36,7 +36,7 @@ const SearchResult = ({
           {cures.map((cure) => (
             <li
               className={clsx("search-result__cure", {
-                "is-result": areStringsSimilar(cure, searchValue),
+                "is-result": startsWith(cure, searchValue),
               })}
               key={cure}
               id={cure}
